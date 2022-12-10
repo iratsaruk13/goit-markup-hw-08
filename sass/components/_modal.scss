@@ -1,0 +1,216 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms $functionCubic,
+    transform 250ms $functionCubic;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  opacity: 1;
+  transition: transform 250ms $functionCubic,
+    opacity 250ms $functionCubic;
+  padding: 40px;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.modal-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0000001a;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: $functionCubic;
+  &:hover,
+  &:focus {
+    fill: var(--main-blue-color);
+  }
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+  margin-bottom: 12px;
+}
+
+.modal-wraper {
+  margin-bottom: 10px;
+}
+
+.input-label {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
+  padding-left: 42px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: $functionCubic;
+  &:focus,
+  &:hover {
+    border-color: var(--main-blue-color);
+  }
+}
+
+.modal-input:focus + .modal-icon,
+.modal-input:hover + .modal-icon {
+  fill: var(--main-blue-color);
+}
+
+.modal-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: $functionCubic;
+}
+
+.modal-comment {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
+  resize: none;
+  padding-top: 12px;
+  padding-left: 16px;
+}
+
+.modal-comment::placeholder {
+  font-size: 12px;
+  color: rgba(117, 117, 117, 0.5);
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: $functionCubic;
+}
+
+.modal-comment:focus,
+.modal-comment:hover {
+  border-color: var(--main-blue-color);
+}
+
+.checkbox {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.checkbox:focus {
+  border-color: transparent;
+  background-color: var(--main-blue-color);
+  background-image: url(../images/full-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.checkbox-icon {
+  display: inline-flex;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  align-items: center;
+  justify-content: center;
+  transition: border;
+  transition-duration: 250ms;
+  transition-timing-function: $functionCubic;
+}
+
+.checkbox:focus + .checkbox-icon {
+  border: 2px solid var(--main-blue-color);
+}
+
+.checkbox:checked + .checkbox-icon {
+  border-color: var(--main-blue-color);
+  background-color: var(--main-blue-color);
+  /* background-image: url(../images/full-check.svg);
+  background-size: contain;
+  background-origin: border-box; */
+}
+
+.accepted-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.checkbox-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--main-blue-color);
+}
+
+.send-btn {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

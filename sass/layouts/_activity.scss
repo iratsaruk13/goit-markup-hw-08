@@ -1,0 +1,37 @@
+.activity {
+    display: none;
+    // @extend %section;
+    // padding-top: 0;
+    @media screen and (min-width: 1200px) {
+         display: contents;
+        }
+}
+
+.activity__list {
+    @include gap(flex,30px);
+}
+
+.activity__item {
+    width: 100%;
+    // width: calc((100% - 60px) / 3);
+}
+
+.activity-wrap {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-wrap__text {
+    position: absolute;
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    text-align: center;
+    @extend %section-text;
+    text-transform: uppercase;
+    color: var(--white-color);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    bottom: 0;
+    left: 0;
+}

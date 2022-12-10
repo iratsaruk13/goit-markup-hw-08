@@ -1,0 +1,36 @@
+.contact-mail {
+    @include gap(flex, 50px);
+
+}
+
+.contact-mail__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $functionCubic;
+
+    &:hover,
+    &:focus {
+            color: var(--main-blue-color);
+        }
+}
+
+.contact-mail__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.contact-mail__item {
+    display: inline-block;
+    padding: 10px;
+}
+
+/* .contacts-item + .contacts-item {
+  margin-left: 50px;
+} */

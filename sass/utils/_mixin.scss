@@ -1,0 +1,4 @@
+@mixin gap ($dp, $gp) {
+    display: $dp;
+    gap: $gp;
+}

@@ -1,0 +1,62 @@
+.benefits {
+  // @extend %section;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.benefits__list {
+  @include gap(flex, 30px);
+  flex-wrap: wrap;
+}
+
+.benefits__item {
+  width: 100%;
+  // width: calc((100% - 90px) / 4);
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
+}
+/* example with before */
+
+/* .benefits-list-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-image: url(../images/antenna.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+  border-color: #F5F4FA;
+} */
+.benefits__icon {
+  display: flex;
+  margin-bottom: 30px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-item-color);
+}
+
+.benefits__title {
+  @extend %section-text;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  margin-bottom: 10px;
+@media screen and (max-width: 1199px) {
+    text-align: center;
+    }
+}
+
+.benefits__subtitle {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}

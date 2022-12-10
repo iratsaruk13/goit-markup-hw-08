@@ -1,0 +1,25 @@
+.main-title-btn {
+  min-width: 216px;
+  min-height: 50px;
+  font-family: inherit;
+  background-color: var(--main-blue-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $functionCubic;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
