@@ -1,9 +1,9 @@
 .navigation {
   display: none;
   @include tablet {
-  display: flex;
-  margin-right: auto;
-  align-items: center;
+    display: flex;
+    margin-right: auto;
+    align-items: center;
   }
 }
 
@@ -21,10 +21,10 @@
 
 .header-logo {
   @include tablet {
-margin-right: 88px;
+    margin-right: 88px;
   }
   @include desktop {
-margin-right: 93px;
+    margin-right: 93px;
   }
 }
 
@@ -60,7 +60,7 @@ margin-right: 93px;
   &--current {
     color: var(--main-blue-color);
     position: relative;
-  
+
     &:after {
       content: "";
       position: absolute;
@@ -73,4 +73,3 @@ margin-right: 93px;
     }
   }
 }
-

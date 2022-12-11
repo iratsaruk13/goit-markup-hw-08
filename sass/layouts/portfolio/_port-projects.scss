@@ -19,7 +19,7 @@
 }
 
 .portfolio-projects {
-  @include gap(flex,30px);
+  @include gap(flex, 30px);
   flex-wrap: wrap;
 }
 
@@ -35,8 +35,8 @@
 .portfolio-project-link {
   // display: block;
   display: flex;
-    flex-direction: column;
-    height: 100%;
+  flex-direction: column;
+  height: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: $functionCubic;

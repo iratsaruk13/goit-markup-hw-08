@@ -1,38 +1,37 @@
 .footer-adress {
-    margin-bottom: 60px;
-    @include tablet {
-           margin-bottom: 0;
-        }
-
+  margin-bottom: 60px;
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 .footer-logo {
-    display: inline-block;
-    margin-bottom: 28px;
+  display: inline-block;
+  margin-bottom: 28px;
 }
 
 .footer-logo-accent {
-    color: var(--white-color);
+  color: var(--white-color);
 }
 
 .footer-list-item:not(:last-child) {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .footer-link-adress {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--white-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
 }
 
 .footer-contact {
-    color: rgba(255, 255, 255, 0.6);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: $functionCubic;
-    &:hover,
-    &:focus {
-            color: var(--main-blue-color);
-        }
+  color: rgba(255, 255, 255, 0.6);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $functionCubic;
+  &:hover,
+  &:focus {
+    color: var(--main-blue-color);
+  }
 }

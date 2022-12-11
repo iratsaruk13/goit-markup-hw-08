@@ -5,8 +5,8 @@
   // align-items: center;
   margin-bottom: 60px;
   @include tablet {
-      margin-bottom: 0;
-    }
+    margin-bottom: 0;
+  }
 }
 
 .footer-text {
@@ -20,7 +20,7 @@
 }
 
 .footer-soc-link-list {
-  @include gap (flex,10px);
+  @include gap(flex, 10px);
   justify-content: center;
 }
 

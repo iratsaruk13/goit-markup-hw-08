@@ -1,46 +1,44 @@
 .contact-mail {
-    display: none;
-    @include tablet {
-        display: flex;
-        flex-direction: column;
-        gap: 10px; }
-   @include desktop {
-        flex-direction: row;
-        gap: 50px;
-    }
-    
-
+  display: none;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @include desktop {
+    flex-direction: row;
+    gap: 50px;
+  }
 }
 
 .contact-mail__link {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--main-text-color);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: $functionCubic;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $functionCubic;
 
-    &:hover,
-    &:focus {
-            color: var(--main-blue-color);
-        }
+  &:hover,
+  &:focus {
+    color: var(--main-blue-color);
+  }
 }
 
 .contact-mail__icon {
-    fill: currentColor;
-    margin-right: 10px;
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .contact-mail__item {
-    display: inline-block;
-    @include desktop {
-padding: 10px;
-    }
-    
+  display: inline-block;
+  @include desktop {
+    padding: 10px;
+  }
 }
 
 /* .contacts-item + .contacts-item {

@@ -1,27 +1,23 @@
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: var(--footer-background-color);
-    text-align: center;
-        @include desktop {
-            text-align: left;
-        }
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footer-background-color);
+  text-align: center;
+  @include desktop {
+    text-align: left;
+  }
 }
 
 .footer-wrap {
-    align-items: baseline;
-    @include tablet {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 60px;
-        }
-                @include desktop {
-            justify-content: flex-start;
-            gap: 70px;
-
-        }
+  align-items: baseline;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 60px;
+  }
+  @include desktop {
+    justify-content: flex-start;
+    gap: 70px;
+  }
 }
-
-
-

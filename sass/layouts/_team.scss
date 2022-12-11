@@ -3,11 +3,10 @@
   // @extend %section;
   padding-top: 60px;
   padding-bottom: 60px;
-@include desktop {
-      padding-top: 94px;
-      padding-bottom: 94px;
-    }
-
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-list {
@@ -22,12 +21,12 @@
   box-shadow: var(--team-card-shadow);
   border-radius: 0px 0px 4px 4px;
   @include tablet {
-      width: calc((100% - 30px) / 2);
-    }
-  
-        @include desktop {
-      width: calc((100% - 90px) / 4);
-    }
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .team-name {
@@ -86,14 +85,4 @@
   }
 }
 
-/* flex-basis: calc((100% - (5 * 10px)) / 6); */
 
-/* 
-width: 100%;
-height: 100%;
-background-color: tomato;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-fill: #ffffff; */

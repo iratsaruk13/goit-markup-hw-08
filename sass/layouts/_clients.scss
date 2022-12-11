@@ -1,12 +1,12 @@
 .clients {
   // @extend %section;
-    padding-bottom: 60px;
-      padding-top: 60px;
-    
-    @include desktop {
-        padding-top: 94px;
-        padding-bottom: 94px;
-      }
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients-list {
@@ -20,12 +20,12 @@
   // width: calc((100% - (5 * 30px)) / 6);
   height: 92px;
   @include tablet {
-      width: calc((100% - 90px) / 3);
-    }
-  
-        @include desktop {
-      width: calc((100% - 150px) / 6);
-    }
+    width: calc((100% - 90px) / 3);
+  }
+
+  @include desktop {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .clients-link {

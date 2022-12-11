@@ -19,7 +19,7 @@
   @include tablet {
     width: calc((100% - 30px) / 2);
   }
- @include desktop {
+  @include desktop {
     width: calc((100% - 90px) / 4);
   }
 }
@@ -49,9 +49,9 @@
   text-transform: uppercase;
   color: var(--main-title-color);
   margin-bottom: 10px;
-@media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
-    }
+  }
 }
 
 .benefits__subtitle {

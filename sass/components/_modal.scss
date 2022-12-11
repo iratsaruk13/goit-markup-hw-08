@@ -5,8 +5,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms $functionCubic,
-    transform 250ms $functionCubic;
+  transition: opacity 250ms $functionCubic, transform 250ms $functionCubic;
 }
 
 .modal {
@@ -14,7 +13,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-max-width: 450px;
+  max-width: 450px;
   min-height: 609px;
   padding: 40px;
   background-color: var(--white-color);
@@ -22,8 +21,7 @@ max-width: 450px;
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   opacity: 1;
-  transition: transform 250ms $functionCubic,
-    opacity 250ms $functionCubic;
+  transition: transform 250ms $functionCubic, opacity 250ms $functionCubic;
   padding: 40px;
   @include desktop {
     min-width: 528px;
@@ -200,23 +198,22 @@ max-width: 450px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-@include desktop {
-font-size: 14px;
-  line-height: 1.71;
-}
-  
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox-link {
   font-weight: 400;
   font-size: 12px;
-    line-height: 1.16;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--main-blue-color);
   @include desktop {
     font-size: 14px;
-      line-height: 1.71;
+    line-height: 1.71;
   }
 }
 

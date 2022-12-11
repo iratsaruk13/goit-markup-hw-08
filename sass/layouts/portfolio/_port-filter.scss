@@ -1,5 +1,5 @@
 .portfolio-btn-list {
-  @include gap(flex,8px);
+  @include gap(flex, 8px);
   flex-wrap: wrap;
   justify-content: flex-start;
   row-gap: 15px;
