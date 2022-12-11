@@ -3,20 +3,20 @@
     padding-bottom: 60px;
     background-color: var(--footer-background-color);
     text-align: center;
-        @media screen and (min-width: 1200px) {
+        @include desktop {
             text-align: left;
         }
 }
 
 .footer-wrap {
     align-items: baseline;
-    @media screen and (min-width: 768px) {
+    @include tablet {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             gap: 60px;
         }
-        @media screen and (min-width: 1200px) {
+                @include desktop {
             justify-content: flex-start;
             gap: 70px;
 

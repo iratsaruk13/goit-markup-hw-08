@@ -1,7 +1,16 @@
 .portfolio-btn-list {
   @include gap(flex,8px);
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 15px;
+  margin-bottom: 40px;
+  @include tablet {
+    justify-content: center;
+    margin-bottom: 30px;
+    @include desktop {
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .portfolio-btn {

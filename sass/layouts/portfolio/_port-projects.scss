@@ -24,11 +24,19 @@
 }
 
 .portfolio-projects-item {
-  width: calc((100% - 60px) / 3);
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .portfolio-project-link {
-  display: block;
+  // display: block;
+  display: flex;
+    flex-direction: column;
+    height: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: $functionCubic;

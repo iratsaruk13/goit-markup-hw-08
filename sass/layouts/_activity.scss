@@ -2,7 +2,7 @@
     display: none;
     // @extend %section;
     // padding-top: 0;
-    @media screen and (min-width: 1200px) {
+    @include desktop {
          display: contents;
         }
 }

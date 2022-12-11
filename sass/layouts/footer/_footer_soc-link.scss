@@ -4,7 +4,7 @@
   // margin-left: 70px;
   // align-items: center;
   margin-bottom: 60px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
       margin-bottom: 0;
     }
 }

@@ -20,8 +20,9 @@
 <body>
     <header class="header">
         <div class="container header--container">
+            <a class="logo header-logo" href="./index.html"> <span class="header-logo__accent">Web</span>Studio</a>
             <nav class="navigation">
-                <a class="logo header-logo" href="./index.html"> <span class="header-logo__accent">Web</span>Studio</a>
+
                 <ul class="nav-list">
                     <li class="nav-list__item">
                         <a class="nav-list__title" href="./index.html">Студія</a>
@@ -53,6 +54,63 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button" class="mob-menu-btn mob-open-btn" data-menu-open>
+                <svg width="40" height="40">
+                    <use href=" ./images/icons.svg#icon-menu_open">
+                    </use>
+                </svg>
+            </button>
+        </div>
+        <div class="mob-menu is-hidden" data-menu>
+            <div class="mob-menu-top">
+                <button type="button" class="mob-menu-btn mob-close-btn" data-menu-close>
+                    <svg width="40" height="40">
+                        <use href=" ./images/icons.svg#icon-close-icon">
+                        </use>
+                    </svg>
+                </button>
+                <ul class="mob-list">
+                    <li class="mob-list__item">
+                        <a class="mob-list__title" href="./index.html">Студія</a>
+                    </li>
+                    <li class="mob-list__item">
+                        <a class="mob-list__title" href="./portfolio.html">Портфоліо </a>
+                    </li>
+                    <li class="mob-list__item">
+                        <a class="mob-list__title" href="#"> Контакти </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mob-menu-bottom">
+                <ul class="mob-contact">
+                    <li class="mob-contact__item">
+                        <a class="mob-contact__link" href="tel:+380961111111">
+                            +38 096 111 11 11</a>
+                    </li>
+                    <li class="mob-contact__item">
+                        <a class="mob-mail__link" href="mailto:info@devstudio.com">
+
+                            info@devstudio.com
+
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="mob-soc">
+                    <li class="mob-soc__item">
+                        <a href="#" class="mob-soc__link">Instagram</a>
+                    </li>
+                    <li class="mob-soc__item">
+                        <a href="#" class="mob-soc__link">Twitter</a>
+                    </li>
+                    <li class="mob-soc__item">
+                        <a href="#" class="mob-soc__link">Facebook</a>
+                    </li>
+                    <li class="mob-soc__item">
+                        <a href="#" class="mob-soc__link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
     </header>
@@ -84,9 +142,22 @@
 
                         <a class="portfolio-project-link" href="">
                             <div class="card-wrap">
-                                <img src="./images/portfolio/technokryak.jpg" width="370" height="294"
-                                    alt="Technokryak">
-                                <p class="hover-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/technokryak.jpg 1x, ./images/portfolio/technokryak-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/portfolio/technokryak-tab.jpg 1x, ./images/portfolio/technokryak-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/portfolio/technokryak-mob.jpg 1x, ./images/portfolio/technokryak-mob-2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+
+                                    <img src="./images/portfolio/technokryak-mob-2x.jpg" width="450" alt="Technokryak">
+                                </picture>
+
+                                <p class="hover-text">Ресурс пропонує комплексні пропозиції з різним рівнем
+                                    функціоналу
                                     та
                                     сервісів. Все це
                                     дозволить відвідувачу отримати
@@ -105,7 +176,20 @@
                     <li class="portfolio-projects-item">
                         <a class="portfolio-project-link" href="">
                             <div class="card-wrap">
-                                <img src="./images/portfolio/poster.jpg" width="370" height="294" alt="Poster">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/poster.jpg 1x, ./images/portfolio/poster-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/portfolio/poster-tab.jpg 1x, ./images/portfolio/poster-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/portfolio/poster-mob.jpg 1x, ./images/portfolio/poster-mob-2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+
+                                    <img src="./images/portfolio/poster-mob-2x.jpg" width="450" alt="Poster">
+                                </picture>
+
                                 <p class="hover-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та
                                     сервісів. Все це
@@ -122,7 +206,20 @@
                     <li class="portfolio-projects-item">
                         <a class="portfolio-project-link" href="">
                             <div class="card-wrap">
-                                <img src="./images/portfolio/seafood.jpg" width="370" height="294" alt="Seafood">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/seafood.jpg 1x, ./images/portfolio/seafood-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/portfolio/seafood-tab.jpg 1x, ./images/portfolio/seafood-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/portfolio/seafood-mob.jpg 1x, ./images/portfolio/seafood-mob-2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+
+                                    <img src="./images/portfolio/seafood-mob-2x.jpg" width="450" alt="Seafood">
+                                </picture>
+
                                 <p class="hover-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та
                                     сервісів. Все це
@@ -139,7 +236,19 @@
                     <li class="portfolio-projects-item">
                         <a class="portfolio-project-link" href="">
                             <div class="card-wrap">
-                                <img src="./images/portfolio/prime.jpg" width="370" height="294" alt="Prime">
+                                <picture>
+                                    <source srcset="./images/portfolio/prime.jpg 1x, ./images/portfolio/prime-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/portfolio/prime-tab.jpg 1x, ./images/portfolio/prime-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/portfolio/prime-mob.jpg 1x, ./images/portfolio/prime-mob-2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+
+                                    <img src="./images/portfolio/prime-mob-2x.jpg" width="450" alt="Prime">
+                                </picture>
+
                                 <p class="hover-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та
                                     сервісів. Все це
@@ -156,7 +265,19 @@
                     <li class="portfolio-projects-item">
                         <a class="portfolio-project-link" href="">
                             <div class="card-wrap">
-                                <img src="./images/portfolio/boxes.jpg" width="370" height="294" alt="Boxes">
+                                <picture>
+                                    <source srcset="./images/portfolio/boxes.jpg 1x, ./images/portfolio/boxes-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/portfolio/boxes-tab.jpg 1x, ./images/portfolio/boxes-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/portfolio/boxes-mob.jpg 1x, ./images/portfolio/boxes-mob-2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+
+                                    <img src="./images/portfolio/boxes-mob-2x.jpg" width="450" alt="Boxes">
+                                </picture>
+
                                 <p class="hover-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та
                                     сервісів. Все це
@@ -173,8 +294,20 @@
                     <li class="portfolio-projects-item">
                         <a class="portfolio-project-link" href="">
                             <div class="card-wrap">
-                                <img src="./images/portfolio/inspiration.jpg" width="370" height="294"
-                                    alt="Inspiration">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/inspiration.jpg 1x, ./images/portfolio/inspiration-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/portfolio/inspiration-tab.jpg 1x, ./images/portfolio/inspiration-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/portfolio/inspiration-mob.jpg 1x, ./images/portfolio/inspiration-mob-2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+
+                                    <img src="./images/portfolio/inspiration-mob-2x.jpg" width="450" alt="Inspiration">
+                                </picture>
+
                                 <p class="hover-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та
                                     сервісів. Все це
@@ -191,8 +324,21 @@
                     <li class="portfolio-projects-item">
                         <a class="portfolio-project-link" href="">
                             <div class="card-wrap">
-                                <img src="./images/portfolio/limited-edition.jpg" width="370" height="294"
-                                    alt="Limited-Edition">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/limited-edition.jpg 1x, ./images/portfolio/limited-edition-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/portfolio/limited-edition-tab.jpg 1x, ./images/portfolio/limited-edition-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/portfolio/limited-edition-mob.jpg 1x, ./images/portfolio/limited-edition-mob-2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+
+                                    <img src="./images/portfolio/limited-edition-mob-2x.jpg" width="450"
+                                        alt="Limited-Edition">
+                                </picture>
+
                                 <p class="hover-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та
                                     сервісів. Все це
@@ -209,7 +355,19 @@
                     <li class="portfolio-projects-item">
                         <a class="portfolio-project-link" href="">
                             <div class="card-wrap">
-                                <img src="./images/portfolio/lab.jpg" width="370" height="294" alt="LAB">
+                                <picture>
+                                    <source srcset="./images/portfolio/lab.jpg 1x, ./images/portfolio/lab-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/portfolio/lab-tab.jpg 1x, ./images/portfolio/lab-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/portfolio/lab-mob.jpg 1x, ./images/portfolio/lab-mob-2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+
+                                    <img src="./images/portfolio/lab-mob-2x.jpg" width="450" alt="LAB">
+                                </picture>
+
                                 <p class="hover-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та
                                     сервісів. Все це
@@ -226,8 +384,21 @@
                     <li class="portfolio-projects-item">
                         <a class="portfolio-project-link" href="">
                             <div class="card-wrap">
-                                <img src="./images/portfolio/growing-business.jpg" width="370" height="294"
-                                    alt="Growing-Business">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/growing-business.jpg 1x, ./images/portfolio/growing-business-2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/portfolio/growing-business-tab.jpg 1x, ./images/portfolio/growing-business-tab-2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/portfolio/growing-business-mob.jpg 1x, ./images/portfolio/growing-business-mob-2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+
+                                    <img src="./images/portfolio/growing-business-mob-2x.jpg" width="450"
+                                        alt="Growing-Business">
+                                </picture>
+
                                 <p class="hover-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
                                     та
                                     сервісів. Все це
@@ -317,7 +488,7 @@
         </div>
         </address>
     </footer>
-
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

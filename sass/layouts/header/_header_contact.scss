@@ -1,6 +1,14 @@
 .contact-mail {
-    display: none
-    // @include gap(flex, 50px);
+    display: none;
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; }
+   @include desktop {
+        flex-direction: row;
+        gap: 50px;
+    }
+    
 
 }
 
@@ -29,7 +37,10 @@
 
 .contact-mail__item {
     display: inline-block;
-    padding: 10px;
+    @include desktop {
+padding: 10px;
+    }
+    
 }
 
 /* .contacts-item + .contacts-item {

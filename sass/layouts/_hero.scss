@@ -1,32 +1,47 @@
 /* Main (Hero) */
 .main {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/bg-image.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: $gradient, url(../../images/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include retina {
+    background-image: $gradient, url(../../images/hero/hero-bg-mob-2x.jpg);
+  }
+  @include mobile {
+    background-image: $gradient, url(../../images/hero/hero-bg-tab.jpg);
+    @include retina {
+      background-image: $gradient, url(../../images/hero/hero-bg-tab-2x.jpg);
+    }
+  }
+  @include tablet {
+    background-image: $gradient, url(../../images/hero/hero-bg-desktop.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
+    height: 600px;
     max-width: 1600px;
-    margin: 0 auto;
+    @include retina {
+      background-image: $gradient, url(../../images/hero/hero-bg-desktop-2x.jpg);
+    }
+  }
 }
 
 .main__title {
-    margin-bottom: 30px;
-    margin-top: 0;
-    color: var(--white-color);
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.6;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    @media screen and (min-width: 1200px) {
-        font-size: 44px ;
-        line-height: 1.36;
-        }
+  margin-bottom: 30px;
+  margin-top: 0;
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  @include desktop {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
-
-
-

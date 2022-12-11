@@ -2,7 +2,7 @@
   // @extend %section;
   padding-bottom: 60px;
   padding-top: 60px;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -16,10 +16,10 @@
 .benefits__item {
   width: 100%;
   // width: calc((100% - 90px) / 4);
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: calc((100% - 30px) / 2);
   }
-  @media screen and (min-width: 1200px) {
+ @include desktop {
     width: calc((100% - 90px) / 4);
   }
 }
