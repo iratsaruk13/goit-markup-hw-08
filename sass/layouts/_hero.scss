@@ -19,13 +19,14 @@
   }
   @include tablet {
     background-image: $gradient, url(../images/hero/hero-bg-desktop.jpg);
-    padding-top: 200px;
-    padding-bottom: 200px;
-    height: 600px;
     max-width: 1600px;
     @include retina {
       background-image: $gradient, url(../images/hero/hero-bg-desktop-2x.jpg);
     }
+  }
+  @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 

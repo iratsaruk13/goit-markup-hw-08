@@ -1,9 +1,9 @@
 .activity {
   display: none;
   // @extend %section;
-  // padding-top: 0;
   @include desktop {
-    display: contents;
+    display: flex;
+    padding-bottom: 94px;
   }
 }
 
