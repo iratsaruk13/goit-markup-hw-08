@@ -2,7 +2,7 @@
   display: none;
   // @extend %section;
   @include desktop {
-    display: flex;
+    display: block;
     padding-bottom: 94px;
   }
 }
